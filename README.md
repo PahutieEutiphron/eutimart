@@ -13,7 +13,7 @@ These aren't your typical beginner CTF challenges. The vulnerabilities are **sta
 ## Rules
 
 - All flags follow the format: `FLAG{...}`
-- No brute-forcing or automated scanning needed — use your brain and your proxy
+- No brute-forcing or automated scanning needed. Use your brain and your proxy
 - The source code is available, but it's been lightly obfuscated, reading it won't hand you the answers
 - Every flag is obtainable through HTTP requests (no filesystem access, no server-side exploitation needed beyond what the app exposes)
 - **Burp Suite (or any intercepting proxy) is strongly recommended**
