@@ -1,4 +1,4 @@
-# EutiMart — Weekend CTF Challenge
+# EutiMart Weekend CTF Challenge
 
 A deliberately vulnerable e-commerce web application built for security training. Your mission: find all **4 hidden flags**.
 
@@ -6,7 +6,7 @@ A deliberately vulnerable e-commerce web application built for security training
 
 ## Overview
 
-EutiMart is a premium tech store with a dark-themed UI, user accounts, a shopping cart, checkout, and profile management. Under the surface, it has 4 security vulnerabilities - each one guarding a flag in the format `FLAG{...}`.
+EutiMart is a premium tech store with a dark-themed UI, user accounts, a shopping cart, checkout, and profile management. Under the surface, it has 4 security vulnerabilities. Each one guarding a flag in the format `FLAG{...}`.
 
 These aren't your typical beginner CTF challenges. The vulnerabilities are **standard types** but they're hidden in places that require careful observation and logical thinking. You won't find them by running a scanner - you'll need to actually understand the application's behavior.
 
