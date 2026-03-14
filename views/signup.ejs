@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<section class="auth-section">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h2>Create Account</h2>
+            <p>Join EutiMart and start shopping</p>
+        </div>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+            <div class="auth-error"><%= error %></div>
+        <% } %>
+
+        <form action="/account/signup" method="POST" class="auth-form">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="6" autocomplete="new-password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required minlength="6" autocomplete="new-password">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Already have an account? <a href="/account/login">Login</a></p>
+        </div>
+    </div>
+</section>
+
+<%- include('partials/footer') %>
